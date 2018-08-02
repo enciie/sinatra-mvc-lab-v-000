@@ -22,6 +22,7 @@ class PigLatinizer
       word = word + "way"
     #words that start with 3 consonants
     elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])
+      binding.pry
       word = word.slice(3..-1) + word.slice(0,3)
       word << "ay"
     #words that start with 2 consonants
