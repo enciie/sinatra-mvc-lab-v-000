@@ -9,7 +9,7 @@ class PigLatinizer
   end
 
   def vowel?(char)
-    char.downcase == "a" || char.downcase == "e" || char.downcase == "i" || char.downcase == "o" || char.downcase == "u"
+    char.match(/[aAeEiIoOuU]/)
   end
 
   def consonant?(char)
