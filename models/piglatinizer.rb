@@ -24,15 +24,15 @@ class PigLatinizer
     elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])
       binding.pry
       word = word.slice(3..-1) + word.slice(0,3)
-      word << "ay"
+      word + "ay"
     #words that start with 2 consonants
     elsif consonant?(word[0]) && consonant?(word[1])
       word = word.slice(2..-1) + word.slice(0,2)
-      word << "ay"
+      word + "ay"
     #words that start with 1 consonant
     else
       word = word.slice(1..-1) + word.slice(0)
-      word << "ay"
+      word + "ay"
     end
   end
 
